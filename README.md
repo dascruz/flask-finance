@@ -35,7 +35,7 @@ source venv/bin/activate
 2. Clone the repository and navigate to the project directory:
 
 ```
-git clone https://github.com/username/flask-finance.git
+git clone https://github.com/dascruz/flask-finance.git
 cd flask-finance
 ```
 
