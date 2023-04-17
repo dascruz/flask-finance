@@ -25,18 +25,18 @@ The Flask Finance app allows users to:
 
 To use Flask Finance, follow these steps:
 
-1. Create and activate a virtual environment:
-
-```
-python -m venv venv
-source venv/bin/activate
-```
-
-2. Clone the repository and navigate to the project directory:
+1. Clone the repository and navigate to the project directory:
 
 ```
 git clone https://github.com/dascruz/flask-finance.git
 cd flask-finance
+```
+
+2. Create and activate a virtual environment:
+
+```
+python3 -m venv venv
+source venv/bin/activate
 ```
 
 3. Install the required dependencies:
@@ -45,13 +45,13 @@ cd flask-finance
 pip install -r requirements.txt
 ```
 
-4. Set your IEX Cloud API key as an environment variable:
+4. Set your IEX Cloud API key as an environment variable (you need to register to get an API key):
 
 ```
 export API_KEY=YOUR_API_KEY_HERE
 ```
 
-5. Rename `finance_dev.db` to `finance.db`.
+5. Rename or copy `finance_dev.db` to `finance.db`.
 
 6. Start the Flask development server:
 
