@@ -1,0 +1,28 @@
+{% extends "layout.html" %} {% block title %} Portfolio {% endblock %} {% block
+main %}
+<h2>Portfolio</h2>
+<div class="mb-3">
+  <table class="table table-striped table-bordered">
+    <thead>
+      <tr>
+        <th>Stock</th>
+        <th>Shares</th>
+        <th>Price</th>
+        <th>Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for stock in stocks %}
+      <tr>
+        <td>{{ stock["stock"] }}</td>
+        <td>{{ stock["shares"] }}</td>
+        <td>{{ stock["price"] | usd }}</td>
+        <td>{{ (stock["shares"] * stock["price"]) | usd }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+<div class="mb-3">Cash: {{ cash | usd }}</div>
+<div class="mb-3">Grand Total: {{ grand_total | usd }}</div>
+{% endblock %}
